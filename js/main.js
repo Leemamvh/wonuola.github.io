@@ -86,7 +86,16 @@ window.addEventListener("scroll", hidelogo);
 //hoverrrrrrrrrrrrr
 
 new hoverEffect({
-    parent: document.querySelector(".project-thumbnail"),
+    parent: document.querySelector(".project-thumbnail1"),
+    intensity:0.3,
+    image1:"/images/bakeryy.png",
+    image2:"/images/bakeryy.png",
+    displacementImage:"/images/baker.png",
+    imagesRatio:300 / 300,
+});
+
+new hoverEffect({
+    parent: document.querySelector(".project-thumbnail2"),
     intensity:0.3,
     image1:"/images/meditate.png",
     image2:"/images/meditate.png",
@@ -95,7 +104,7 @@ new hoverEffect({
 });
 
 new hoverEffect({
-    parent: document.querySelector(".project-thumbnail2"),
+    parent: document.querySelector(".project-thumbnail3"),
     intensity:0.3,
     image1:"/images/artsyy.png",
     image2:"/images/artsyy.png",
@@ -103,7 +112,7 @@ new hoverEffect({
     imagesRatio:300 / 300,
 });
 new hoverEffect({
-    parent: document.querySelector(".project-thumbnail3"),
+    parent: document.querySelector(".project-thumbnail4"),
     intensity:0.3,
     image1:"/images/ereportapp.png",
     image2:"/images/ereportapp.png",
