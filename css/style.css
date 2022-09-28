@@ -323,9 +323,6 @@ font-size: 2.3rem;
     background: var(--first-color);
     font-weight: 600;
 }
-home-img {
-    display: none;
-}
 
 /*projecttttt*/
 .project-wrap {
@@ -638,20 +635,7 @@ z-index: 99999;
         flex-basis: 58%;
         max-width: 58%;
     }
-    .home-image {
-        flex-basis: 42%;
-        max-width: 42%;
-        position: relative;
-        width: 359px;
-        overflow: hidden;
-        height: 400px;
-    }
-    .home-img {
-        display: block;
-        height: 100%;
-        position: relative;
    
-    }
     .home-title{
         font-size: 2.5rem;
         line-height: 3rem;
@@ -770,14 +754,7 @@ z-index: 99999;
         padding-top: 9rem;
     }
 
-    .home-image {
-        flex-basis: 40%;
-        max-width: 40%;
-        height: 550px;
-    }
-    .home-img {
-        height: 550px;
-    }
+   
     .home-data{
         flex-basis: 60%;
         max-width: 60%;
