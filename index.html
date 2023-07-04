@@ -1,225 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Wonuola's Portfolio</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="./js/hover-effect.umd.js"></script>
-    
-    </head>
-        <body>  
-        <div class="overlay"></div>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#home" class="logo">
-                    <img src="images/work-back/logo.png">
-                </a>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+<!-- Navigation -->
+<header class="header" id="home">
+  <nav class="nav-container">
+    <div class="logo-container">
+      <a href="#" class="nav-logo">Wonu.</a>
+      <div class="mouse-effect"></div>
+    </div>
 
-                <div class="nav-menu" id="nav-menu">
-                    <ul class="navigation-list">
-                        <li class="nav-item"><a href="#home" class="nav-link">
-                            <span class="nav-link1">Home</span>
-                            <span class="nav-link2">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item"><a href="#project" class="nav-link">
-                        <span class="nav-link1">Projects</span>
-                        <span class="nav-link2">Projects</span>
-                    </a>
-                </li>
-                <li class="nav-item"><a href="#home" class="nav-link">
-                    <span class="nav-link1">About</span>
-                    <span class="nav-link2">About</span>
-                </a>
-            </li>
-            <li class="nav-item"><a href="#footer" class="nav-link">
-                <span class="nav-link1">Contact</span>
-                <span class="nav-link2">Contact</span>
+    <div class="nav-menu" id="navbar-menu">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a data-hover-text="Home" href="index.html" class="navbar-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a data-hover-text="Works" href="#project" class="navbar-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a data-hover-text="About Me" href="about.html" class="navbar-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a data-hover-text="Say Hi!" href="contact.html" class="navbar-link">Contact</a>
+        </li>
+      </ul>
+      <div class="nav-open" id="nav-open">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm Wonuola!</h1>
+    <p>A (UI) designer &amp; Website Developer.
+      I enjoy designing meaningful experiences for brands &amp; businesses to help them
+      serve their target audience.</p>
+  </div>
+  <div class="scroll-down">
+    <span class="arrow"></span>
+  </div>
+  <div class="rounded-text rotating">
+    <svg viewBox="0 0 200 200">
+      <path id="textPath" d="M 80,0 A 80,80 0 0 1 -80,0 A 80,80 0 0 1 80,0" transform="translate(100,100)" fill="none" stroke-width="0"></path>
+      <g font-size="15.1px">
+        <text text-anchor="start">
+          <textPath class="coloring" xlink:href="#textPath" startOffset="0%">  Research - UI Design - UX Design - Web Development </textPath>
+        </text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section class="projects" id="project">
+  <div class="container">
+    <h2 class="section-title">Featured <br/>Case Studies</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="images/project1.png" alt="Project 1">
+        <h3 class="project-title">Artify</h3>
+        <p class="project-description">A mobile app that helps shopping for wall art easily from your homes.</p>
+        <a href="https://www.behance.net/gallery/174520397/Artify-A-wall-art-shopping-app" class="project-link">
+          <span class="project-link1">Read Project Here</span>
+          <span class="project-link2">Behance Case Study</span>
+      </a>
+      </div>
+      <div class="project">
+        <img src="images/project2.png" alt="Project 2">
+        <h3 class="project-title">Escape</h3>
+        <p class="project-description">A meditation app that helps people to relax and focus.</p>
+        <a href="https://www.behance.net/gallery/174524425/Meditation-App-UIUX-Case-Study" class="project-link">
+          <span class="project-link1">Read Project Here</span>
+          <span class="project-link2">Behance Case Study</span>
+      </a>
+      </div>
+      <div class="project">
+        <img src="images/project3.png" alt="Project 3">
+        <h3 class="project-title">Cakemade Bakery</h3>
+        <p class="project-description">A responsive website for a bakery and cafe</p>
+        <a href="https://www.behance.net/gallery/137716633/Bakery-Website-Cakemade-Bakery" class="project-link">
+          <span class="project-link1">Read Project Here</span>
+          <span class="project-link2">Behance Case Study</span>
+      </a>
+      </div>
+      <div class="project">
+        <img src="images/project4.png" alt="Project 4">
+        <h3 class="project-title">Dose Of Advice</h3>
+        <p class="project-description">A random generator app</p>
+        <a href="https://adoseofadvice.netlify.app/" class="project-link">
+          <span class="project-link1">View Project Here</span>
+          <span class="project-link2">Visit live site</span>
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer section" id="footer">
+             <div class="footer-email">
+                 <a href="mailto:wonuolaog@gmail.com">
+                     wonuolaog@gmail.com
                  </a>
-             </li>
-        </ul>
-            <ul class="social-links">
-                <li class="social-link">
-                        <a href="https://www.instagram.com/shedessins">
-                            <span>IG</span>
-                            <i class='bx bxl-instagram-alt'></i>
-                            </a>
-                        </li>
-                <li class="social-link">
-                            <a href="https://www.behance.net/wvnuola">
-                                <span>Be</span>
-                                <i class='bx bxl-behance'></i>
-                            </a>
-                        </li>
-                <li class="social-link">
-                            <a href="https://github.com/leemamvh">
-                            <span>Github</span>
-                            <i class='bx bxl-github' ></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="email">
-                        <a  href="mailto:wonuolaog@gmail.com">
-                            wonuolaog@gmail.com
-                        </a>
-                    </div>
-
-                    <div class="nav-close" id="nav-close"></div>
-                </div>
-
-                <div class="nav-open" id="nav-open"></div>
-        
-            </nav>
-        </header>
-      <main class="main">
-          <!--homeeeeeeeeeeee-->
-          <section class="section home" id="home">
-              <div class="container home-container">
-                  <div class="home-data">
-                      <h1 class="home-title">Hey! I'm Wonuola</h1>
-                      <p class="home-description">A Product and Website Designer.
-                          A user interface (UI) designer who is driven by ideas and excitement.
-                          For websites and applications, I constantly keep an eye out for clean, 
-                          appealing visual design. I'm also a connoisseur of sweet things.
-                        </p>
-
-                        <div class="home-button">
-                         <a href="#footer"> <button class="btn">Get In Touch</button></a> 
-                        </div>
-                  </div>
-              </div>
-          </section>
-          <!---project section---->
-          <section class="section project" id="project">
-              <div class="container project-container">
-                  <h2 class="section-title">Featured <br/>Case Studies</h2>
-                  <div class="project-wrap">
-                      <!---project one-->
-                      <div class="project-list p-1">
-                          <div class="project-content-wrap">
-                              <div class="project-media">
-                                      <div class="project-img">
-                                          <div class="project-thumbnail project-thumbnail1"></div>
-                                      </div>
-                                  </a>
-                              </div>
-
-                              <div class="project-content">
-                                  <h3>Cakemade Bakery</h3>
-                                  <p>A responsive website for a bakery and cafe
-                                </p>
-                                <div class="project-btn-container">
-                                    <a href=https://www.behance.net/gallery/137716633/Bakery-Website-Cakemade-Bakery class="project-link">
-                                        <span class="project-link1">Read Project Here</span>
-                                        <span class="project-link2">Behance Case Study</span>
-                                    </a>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!---project two-->
-                      <div class="project-list p-2">
-                          <div class="project-content-wrap">
-                              <div class="project-media">
-                                      <div class="project-img">
-                                          <div class="project-thumbnail project-thumbnail2"></div>
-                                      </div>
-                                  </a>
-                              </div>
-
-                              <div class="project-content">
-                                  <h3>Escape</h3>
-                                  <p>A meditation app that helps people relax, focus.
-                                </p>
-                                <div class="project-btn-container">
-                                    <a href="https://www.behance.net/gallery/134575157/Meditation-Mobile-App" class="project-link">
-                                        <span class="project-link1">Read Project Here</span>
-                                        <span class="project-link2">Behance Case Study</span>
-                                    </a>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!---project three-->
-                      <div class="project-list p-3">
-                        <div class="project-content-wrap">
-                            <div class="project-media">
-                                    <div class="project-img">
-                                        <div class="project-thumbnail project-thumbnail3"></div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="project-content">
-                                <h3>Artsy</h3>
-                                <p>An app that helps shopping for wall art easily
-                                  from the comfort of your homes.
-                              </p>
-                              <div class="project-btn-container">
-                                  <a href="https://www.behance.net/gallery/134501041/Artsy-Wall-art-shopping-app" class="project-link">
-                                      <span class="project-link1">Read Project Here</span>
-                                      <span class="project-link2">Behance Case Study</span>
-                                  </a>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-
-                  </div>
-              </div>
-          </section>
-         <footer class="footer section" id="footer">
-             <div class="container footer-container grid">
-                
-                 <div class="footer-right">
-                     <h2 class="footer-contact-title section-title">Want to work together?<br/>Get in Touch</h2>
-
-                    <form action="https://formspree.io/f/xoqredjl" method="POST">
-<div class="split">
-<input type="text"placeholder="Full Name" name="name" required="">
-  <input type="text" name="email" placeholder="Your email" />
- <input type="text" placeholder="Mobile No. (+234)" number="number" required="">
- </div>
-
-<textarea name="message"id="message"  cols="30" rows="4"
-placeholder="Your Message"required></textarea>
-<button type="submit" class="btn submit-btn">Submit</button>
-</form>
-                 </div>
-                 <div class="footer-left">
-                     <p class="footer-description">
-                         Feel free to reach out. I'm just an email way!
-                        </p>
-
-                        <div class="footer-email">
-                            <a href="mailto:wonuolaog@gmail.com">
-                                wonuolaog@gmail.com
-                            </a>
-                        </div>
-                        <div class="copyright">
-                            &copy; 2021 by Wonuola Ogunsanmi
-                        </div>
-                 </div>
              </div>
-         </footer>
-         <!---scroll-->
-         <a href="#" class="scrollup" id="scroll-up">
-            <i class='bx bx-sort-z-a scrollup-icon'></i>
-         </a>
-      </main>
+             <div class="copyright">
+                 &copy; 2023 by Wonuola Ogunsanmi
+             </div>
+</footer>
+<!---scroll-->
+<a href="#" class="scrollup" id="scroll-up">
+ <i class='bx bx-sort-z-a scrollup-icon'></i>
+</a>
 
-           
-<script src="js/main.js"></script>  
+<script>
+  // Animation for arrow, navigation menu, logo, and hero text using GSAP
+  gsap.from(".nav-container", { opacity: 0, y: -20, duration: 1 });
+  gsap.from(".nav-logo", { opacity: 0, x: -20, duration: 1, delay: 0.5 });
+  gsap.from(".nav-list li", { opacity: 0, x: -20, duration: 1, stagger: 0.1, delay: 0.7 });
+  gsap.from(".nav-open", { opacity: 0, x: -20, duration: 1, delay: 1 });
+  gsap.from(".hero-text", { opacity: 0, y: 20, duration: 1, delay: 1.5 });
+  gsap.from(".scroll-down .arrow", { opacity: 0, x: -20, duration: 1, delay: 2 });
+</script>
 
+<script src="./js/main.js"></script>
 </body>
 </html>
